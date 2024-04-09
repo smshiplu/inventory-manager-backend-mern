@@ -22,6 +22,7 @@ app.use(cors({
   credentials: true
 }));
 
+
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // Routes middleware
