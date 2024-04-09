@@ -12,14 +12,13 @@ const errorHandler = require("./middlewares/errorMiddleware");
 const productRoute = require("./routes/productRoute");
 const contactUsRoute = require('./routes/contactUsRoute');
 
-
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParse.json());
 app.use(cors({
-  origin: ["http://localhost:3000", "https://inventory-mern.vercel.app"],
+  origin: ["http://localhost:3000", "https://inventory-manager-mern.vercel.app"],
   credentials: true
 }));
 
