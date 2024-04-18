@@ -9,7 +9,7 @@ const {
   updatePassword, 
   forgetPassword,
   resetpassword} = require("../controllers/userController");
-const protect = require("../middlewares/authMIddleware");
+const protect = require("../middlewares/authMiddleware");
 
 const router = express.Router();
 

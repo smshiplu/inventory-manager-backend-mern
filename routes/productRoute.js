@@ -6,7 +6,7 @@ const {
   getSingleProduct, 
   deleteSingleProduct, 
   updateSingleProduct} = require('../controllers/productController');
-const protect = require('../middlewares/authMIddleware');
+const protect = require('../middlewares/authMiddleware');
 const { upload } = require('../utils/fileUpload');
 
 const router = express.Router();
