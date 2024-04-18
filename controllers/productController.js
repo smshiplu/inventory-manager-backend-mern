@@ -27,6 +27,7 @@ const createProduct = asyncHandler( async (req, res) => {
         throw new Error("Image couldn't be uploaded");
       }
     }
+    
     fileData = {
       fileName: req.file.originalname,
       // filePath: req.file.path,
