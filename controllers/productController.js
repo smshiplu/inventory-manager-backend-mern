@@ -15,10 +15,9 @@ const createProduct = asyncHandler( async (req, res) => {
   // Handle file upload
   let fileData = {};
   if(req.file) {
-
+    let uploadedFile;
     // Save image to Cloudinary
     if(process.env.NODE_ENV === "production") {
-      let uploadedFile;
       try {
         uploadedFile = await cloudinary.uploader.upload(req.file.path, { folder: "Pinvent App", resource_type: "image" });
   
